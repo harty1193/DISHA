@@ -29,14 +29,14 @@ def moveRightMotorBackward():
 
 def moveLeftMotorForward():
     GPIO.output(MOTOR_LEFT_ENABLE, SPEED)
-    GPIO.output(MOTOR_LEFT_PIN3, 1)
-    GPIO.output(MOTOR_LEFT_PIN4, 0)
+    GPIO.output(MOTOR_LEFT_PIN3, 0)
+    GPIO.output(MOTOR_LEFT_PIN4, 1)
 
 
 def moveLeftMotorBackward():
     GPIO.output(MOTOR_LEFT_ENABLE, SPEED)
-    GPIO.output(MOTOR_LEFT_PIN3, 0)
-    GPIO.output(MOTOR_LEFT_PIN4, 1)
+    GPIO.output(MOTOR_LEFT_PIN3, 1)
+    GPIO.output(MOTOR_LEFT_PIN4, 0)
 
 
 def stay_put():

@@ -2,10 +2,10 @@ import time
 import RPi.GPIO as GPIO
 
 # Declare GPIO pins
-SENSOR_1 = 19
-SENSOR_2 = 21
-SENSOR_3 = 23
-SENSOR_4 = 36
+SENSOR_1 = 36
+SENSOR_2 = 23
+SENSOR_3 = 21
+SENSOR_4 = 19
 
 
 def setupSensorIO():

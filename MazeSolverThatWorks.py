@@ -3,10 +3,10 @@ import RPi.GPIO as GPIO
 
 # On track proximity sensor reading is 1
 # Declare GPIO pins
-SENSOR_1 = 19
-SENSOR_2 = 21
-SENSOR_3 = 23
-SENSOR_4 = 36
+SENSOR_1 = 36
+SENSOR_2 = 23
+SENSOR_3 = 21
+SENSOR_4 = 19
 
 
 MOTOR_RIGHT_ENABLE1 = 33
@@ -98,14 +98,14 @@ def moveRightMotorBackward():
 
 def moveLeftMotorForward():
     GPIO.output(MOTOR_LEFT_ENABLE2, 1)
-    GPIO.output(MOTOR_LEFT_PIN3, 1)
-    GPIO.output(MOTOR_LEFT_PIN4, 0)
+    GPIO.output(MOTOR_LEFT_PIN3, 0)
+    GPIO.output(MOTOR_LEFT_PIN4, 1)
 
 
 def moveLeftMotorBackward():
     GPIO.output(MOTOR_LEFT_ENABLE2, 1)
-    GPIO.output(MOTOR_LEFT_PIN3, 0)
-    GPIO.output(MOTOR_LEFT_PIN4, 1)
+    GPIO.output(MOTOR_LEFT_PIN3, 1)
+    GPIO.output(MOTOR_LEFT_PIN4, 0)
 
 
 def stay_put():
